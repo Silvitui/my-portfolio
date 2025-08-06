@@ -1,0 +1,141 @@
+{
+  "NAV": {
+    "LANGUAGE": "Idioma",
+    "HOME": "Inici",
+    "ABOUT": "Sobre mi",
+    "PROJECTS": "Projectes",
+    "EXPERIENCE": "Experiència",
+    "CONTACT": "Contacte"
+  },
+  "HOME": {
+    "INTRO": "Hola, soc",
+    "NAME": " Silvia Tuiran",
+    "WELCOME": "Benvinguda al meu espai personal, un lloc on comparteixo la meva passió per la vida, la creativitat i els animals que tant estimo."
+  },
+  "ABOUT": {
+    "TITLE": "Sobre mi",
+    "INTRO": "Després de 9 anys entre taules, clients i històries servides a cada plat, vaig decidir transformar aquesta experiència en quelcom nou.",
+    "EXPERIENCE": "La cura pels detalls, l'empatia i la capacitat de llegir les necessitats de les persones no es van quedar enrere: me les vaig emportar al món digital...",
+    "HOBBY": "Avui soc desenvolupadora frontend, i dissenyo experiències web amb la mateixa sensibilitat que vaig aprendre treballant cara a cara amb la gent.",
+    "BOOTCAMP": "Vaig completar un bootcamp intensiu de Frontend amb Angular a ITAcademy. Actualment, compagino pràctiques a ITA Challenges amb la meva feina en hostaleria, aplicant la meva nova visió tècnica.",
+    "SKILLS_TITLE": "Habilitats",
+    "SKILLS": {
+      "FRONTEND": "Frontend: Angular, HTML5, CSS3, TypeScript, RxJS",
+      "BACKEND": "Backend: Node.js, Express, MongoDB (bases per a full-stack)",
+      "HOSTELERIA": "Hostaleria: Lideratge d'equips, resolució de conflictes, mentalitat orientada al detall",
+      "OTHERS": "Soft skills: Adaptabilitat (de servir plats a debugar codi!), compromís i amor pels reptes"
+    }
+  },
+  "EXPERIENCE_TECH": {
+    "TITLE": "Carta evolució",
+    "BIO": "De servir plats a servir components. Una nova carta, mateixa passió pel detall.",
+    "ENTRIES": [
+      {
+        "MOMENT": "De la sala al Frontend",
+        "POSITION": "Alumna del bootcamp de desenvolupament web",
+        "COMPANY": "IT Academy (Barcelona Activa)",
+        "DATES": "Sept 2024 – Mar - 2025",
+        "DESCRIPTION": "Formació intensiva com a desenvolupadora frontend. Vaig aprendre Angular, JavaScript, TypeScript, Node.js, i bases sòlides de disseny responsive, control de versions i bones pràctiques. Aquí va començar tot."
+      },
+      {
+        "MOMENT": "Primera mise en place tech",
+        "POSITION": "Desenvolupadora frontend Angular",
+        "COMPANY": "IT Academy (Barcelona Activa)",
+        "DATES": "Mar 2024 – Jul 2024",
+        "DESCRIPTION": "Participació activa en el desenvolupament d'una plataforma de reptes tècnics per a estudiants. Treball col·laboratiu sota metodologia Scrum: planificació de sprints, dailys, i revisió de codi en equip. Implementació de funcionalitats completes en Angular, integració amb APIs REST i ús professional de Git."
+      }
+    ],
+    "PROJECTS_TITLE": "Projectes servits en safata",
+    "PROJECTS": [
+      {
+        "TITLE": "ConnectaPet",
+        "DESCRIPTION": "Projecte final del bootcamp. Una app per a persones amb gossos reactius. Mostra quins gossos hi ha al pipicà en temps real, permetent decidir si anar-hi o no. Inclou mapa i compatibilitat entre gossos. Desenvolupada en Angular, connectada a una API Node amb autenticació per cookies."
+      },
+      {
+        "TITLE": "PlanItGo ECO",
+        "DESCRIPTION": "Aplicació formativa centrada en turisme sostenible a Barcelona. Organitza un itinerari de 5 dies calculant la petjada de carboni. Ús de mapes, calendari interactiu i estadístiques personalitzades. Enfocada en accessibilitat, UI responsiva i bones pràctiques."
+      },
+      {
+        "TITLE": "StarWars",
+        "DESCRIPTION": "Web desenvolupada com a part de la formació. Consumeix una API pública de Star Wars i mostra personatges, naus i planetes en una interfície dinàmica. Ús de Firebase per a hosting i autenticació."
+      }
+    ]
+  },
+  "EXPERIENCE": {
+    "TITLE": "Carta arrel",
+    "BIO": "Una trajectòria servida en temps.",
+    "ENTRIES": [
+      {
+        "MOMENT": "Comença el servei",
+        "POSITION": "Responsable de sala",
+        "COMPANY": "La Burg (Barcelona)",
+        "DATES": "Jun 2016 – Feb 2020",
+        "DESCRIPTION": "El meu primer contacte amb la gestió de cuina i sala. Vaig aprendre a coordinar equips i mantenir el ritme en un entorn molt dinàmic."
+      },
+      {
+        "MOMENT": "Salt a les antípodes",
+        "POSITION": "Cambrera",
+        "COMPANY": "Bavarian (Austràlia)",
+        "DATES": "Jun 2020 – Feb 2021",
+        "DESCRIPTION": "Servei en anglès i gestió d'esdeveniments massius a la costa australiana. Una experiència internacional que em va empènyer fora de la meva zona de confort."
+      },
+      {
+        "MOMENT": "Torn amb vistes",
+        "POSITION": "Segona responsable de sala",
+        "COMPANY": "Xiringuito Escribà (Empuriabrava)",
+        "DATES": "Mai 2021 – Des 2021",
+        "DESCRIPTION": "Coordinació de servei en terrassa, atenció multilingüe i adaptació al ritme exigent de l'estiu davant del mar."
+      },
+      {
+        "MOMENT": "Entre kupeles",
+        "POSITION": "Maître",
+        "COMPANY": "Sagardi 1881",
+        "DATES": "Gen 2022 – Jul 2022",
+        "DESCRIPTION": "Supervisió de sala en un restaurant de cuina basca premium. Atenció personalitzada a clients i gestió d'equip en sala."
+      },
+      {
+        "MOMENT": "Boutique en marxa",
+        "POSITION": "Responsable de sala",
+        "COMPANY": "Casa de Comidas Buenavista",
+        "DATES": "Jul 2022 – Jun 2024",
+        "DESCRIPTION": "Restaurant d'un hotel boutique. Coordinació de torns, gestió de servei i lideratge d'equip en un entorn cuidat i proper."
+      }
+    ]
+  },
+   "PROJECTS": {
+    "TITLE": "Projectes",
+    "BIO": "Aquests són alguns dels meus projectes destacats: ConnectaPet, una app per registrar mascotes i trobar pipicans compatibles a Barcelona; PlanitGo, un planificador de vacances sostenibles amb rutes i càlcul de CO2; i Star Wars SPA, una app serverless que mostra dades de naus i pilots de Star Wars.",
+    "VIEW": "Veure projecte",
+    "CONNECTAPET": {
+      "NAME": "ConnectaPet",
+      "DESCRIPTION": "App feta amb Angular i Node.js amb MongoDB. Registra la teva mascota i connecta amb altres gossos als pipicans de Barcelona, mostrant la compatibilitat basada en trets de personalitat.",
+      "URL": "https://connectapet.silviatuiranb.es",
+      "GITHUB": "https://github.com/Silvitui/pipipark"
+    },
+    "PLANITGO": {
+      "NAME": "PlanitGo",
+      "DESCRIPTION": "App Angular amb backend a Firebase per planificar vacances sostenibles a Barcelona, generant rutes amb càlcul d’emissions de CO2.",
+      "URL": "https://silvitui.github.io/inprocode/welcome",
+      "GITHUB": "https://github.com/Silvitui/inprocode"
+    },
+    "STARWARS": {
+      "NAME": "Star Wars",
+      "DESCRIPTION": "SPA serverless en Angular que consumeix una API amb dades de naus i pilots de Star Wars.",
+      "URL": "https://starwars.silviatuiranb.es",
+      "GITHUB": "https://github.com/Silvitui/Star-Wars"
+    }
+  },
+  "CONTACT": {
+    "DOWNLOAD_CV": "Descarregar CV",
+    "LINKEDIN": "LinkedIn",
+    "GITHUB": "GitHub",
+    "EMAIL": "Correu electrònic"
+  },
+ "BOOTCAMP": {
+  "TITLE": "Bootcamp IT Academy",
+  "DESCRIPTION": "Formació intensiva en desenvolupament frontend a Barcelona Activa.",
+  "CLICK_HINT": "Clica la imatge per veure el certificat.",
+  "ALT_IMAGE": "Certificat del Bootcamp IT Academy"
+}
+
+}

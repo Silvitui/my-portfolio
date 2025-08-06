@@ -1,0 +1,67 @@
+<nav  [class.-translate-y-full]="!showNavbar()" class="fixed top-0 left-0 right-0 z-50 bg-[rgba(180,145,100,0.57)] px-4 py-2 shadow-md">
+  <div class="navbar justify-between flex-wrap">
+    <div class="flex md:hidden">
+      <button class="btn btn-ghost" (click)="toggleMenu()" aria-label="Menú">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path [attr.d]="isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="hidden md:flex gap-6 text-lg items-center">
+      @for (link of navLinks; track link.labelKey) {
+        <li>
+          <a
+            [href]="link.path"
+            class="relative py-1 transition-colors hover:text-[#764b2a] text-[#f5f5dc]"
+            [class.active]="isActive(link.path)"
+          >
+            {{ link.labelKey | translate }}
+            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#764b2a] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </li>
+      }
+    </ul>
+
+    <div class="hidden md:flex items-center gap-2 ml-auto">
+      <select
+        id="lang"
+        class="select select-sm bg-[#f5f5dc] border-[#a37653] text-[#4b3b2b] font-['Cinzel'] rounded-md shadow-sm hover:border-[#764b2a] focus:outline-none focus:ring-2 focus:ring-[#764b2a] transition"
+        [value]="currentLang()"
+        (change)="changeLang($any($event.target).value)"
+      >
+        @for (lang of supportedLangs; track lang) {
+          <option [value]="lang">{{ getLangLabel(lang) }}</option>
+        }
+      </select>
+    </div>
+  </div>
+  @if (isOpen) {
+    <ul class="flex flex-col gap-1  md:hidden text-sm items-center  py-2 rounded-b-lg ">
+      @for (link of navLinks; track link.labelKey) {
+        <li>
+          <a
+            [href]="link.path"
+            class="block py-1 text-[#f5f5dc] hover:text-[#764b2a]"
+            (click)="toggleMenu()"
+          >
+            {{ link.labelKey | translate }}
+          </a>
+        </li>
+      }
+      <li class="flex items-center gap-2 mt-2">
+        <select
+          id="langMobile"
+          class="select select-bordered select-sm bg-white"
+          [value]="currentLang()"
+          (change)="changeLang($any($event.target).value)"
+        >
+          @for (lang of supportedLangs; track lang) {
+            <option [value]="lang">{{ getLangLabel(lang) }}</option>
+          }
+        </select>
+      </li>
+    </ul>
+  }
+</nav>

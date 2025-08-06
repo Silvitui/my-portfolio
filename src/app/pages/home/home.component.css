@@ -1,0 +1,146 @@
+
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  padding-bottom: 20vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #4b3b2b;
+ 
+  animation: fadeUp 1.5s ease forwards;
+  opacity: 0;
+
+   @media (max-width: 480px) {
+    min-height: auto;
+    padding-bottom: 10vh;
+    padding-top: 37vh; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.intro {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  animation: colorShift 3s ease-in-out infinite;
+  text-align: right; 
+
+  @media (max-width: 600px) {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+
+.name {
+  font-style: italic;
+  font-weight: 700;
+  animation: colorShift 3s ease-in-out infinite;
+}
+
+.welcome-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  max-width: 700px;
+  text-align: right;
+  color: #6b4c3b;
+  line-height: 1.5;
+
+  @media (max-width: 600px) {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+
+.typewriter-wrapper {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 3s steps(40, end) forwards;
+  max-width: 100vw;
+  color: #a6673f;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+
+  @media (max-width: 600px) {
+    font-size: 2.2rem;
+  }
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  margin-left: 4px;
+  color: #a6673f;
+  font-weight: 700;
+  font-size: 5rem;
+  animation: blink 0.7s steps(2, start) infinite, hideCursor 0s 3.1s forwards;
+
+  @media (max-width: 600px) {
+    font-size: 2.2rem;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorShift {
+  0%, 100% {
+    color: #3e3e3e;  
+  }
+  50% {
+    color: #724511;  
+  }
+}
+
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideCursor {
+  to {
+    opacity: 0;
+  }
+}

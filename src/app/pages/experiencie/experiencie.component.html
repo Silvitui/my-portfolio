@@ -1,0 +1,51 @@
+<section class="flex flex-wrap justify-center items-stretch gap-8 p-8 ">
+  <div class="bg-[#ebdfcf] border-[3px] border-[#e8d7bb] shadow-xl max-w-[90vw] md:max-w-xl flex-1 flex flex-col justify-between rounded-2xl px-6 sm:px-8 py-10 text-[#4b3b2b] text-center">
+    <h2 class="text-[2.7rem] mb-6 text-[#6b3e2e] font-[Cormorant_Garamond] italic font-semibold tracking-wide">
+      {{ 'EXPERIENCE_TECH.TITLE' | translate }}
+    </h2>
+    <p class="text-[1.15rem] italic text-[#7a5a3a] mb-12 font-[Lora]">
+      {{ 'EXPERIENCE_TECH.BIO' | translate }}
+    </p>
+
+    @for (exp of experienceTech(); track exp.MOMENT) {
+      <div class="mb-12 font-[Lora]">
+        <h3 class="text-[1.3rem] uppercase mb-1 tracking-wide text-[#8b5c2c] relative inline-block after:content-['❧'] after:block after:text-[1.3rem] after:text-[#c49a6c] after:mt-1">
+          {{ exp.MOMENT }}
+        </h3>
+        <h4 class="text-[1.15rem] font-medium mb-1">{{ exp.POSITION }} – {{ exp.COMPANY }}</h4>
+        <p class="text-[0.95rem] italic text-[#7a5a3a] mb-2">{{ exp.DATES }}</p>
+        <p class="text-[1.05rem] leading-[1.7] text-[#3f3024] max-w-[90%] mx-auto">{{ exp.DESCRIPTION }}</p>
+      </div>
+    }
+
+    @for (project of techProjects(); track project.TITLE) {
+      <div class="mb-12 font-[Lora]">
+        <h3 class="text-[1.3rem] uppercase mb-1 tracking-wide text-[#8b5c2c] relative inline-block after:content-['❧'] after:block after:text-[1.3rem] after:text-[#c49a6c] after:mt-1">
+          {{ project.TITLE }}
+        </h3>
+        <p class="text-[1.05rem] leading-[1.7] text-[#3f3024] max-w-[90%] mx-auto">{{ project.DESCRIPTION }}</p>
+      </div>
+    }
+  </div>
+
+  
+  <div class="bg-[#d6b37f93] border-[3px] border-[#e7cba1] shadow-xl max-w-[90vw] md:max-w-xl flex-1 flex flex-col justify-between rounded-2xl px-6 sm:px-8 py-10 text-[#4b3b2b] text-center">
+    <h2 class="text-[2.7rem] mb-6 text-[#6b3e2e] font-[Cormorant_Garamond] italic font-semibold tracking-wide">
+      {{ 'EXPERIENCE.TITLE' | translate }}
+    </h2>
+    <p class="text-[1.15rem] italic text-[#7a5a3a] mb-12 font-[Lora]">
+      {{ 'EXPERIENCE.BIO' | translate }}
+    </p>
+
+    @for (exp of experiences(); track exp.MOMENT) {
+      <div class="mb-12 font-[Lora]">
+        <h3 class="text-[1.3rem] uppercase mb-1 tracking-wide text-[#8b5c2c] relative inline-block after:content-['❧'] after:block after:text-[1.3rem] after:text-[#c49a6c] after:mt-1">
+          {{ exp.MOMENT }}
+        </h3>
+        <h4 class="text-[1.15rem] font-medium mb-1">{{ exp.POSITION }} – {{ exp.COMPANY }}</h4>
+        <p class="text-[0.95rem] italic text-[#7a5a3a] mb-2">{{ exp.DATES }}</p>
+        <p class="text-[1.05rem] leading-[1.7] text-[#3f3024] max-w-[90%] mx-auto">{{ exp.DESCRIPTION }}</p>
+      </div>
+    }
+  </div>
+</section>

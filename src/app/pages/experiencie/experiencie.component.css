@@ -1,0 +1,99 @@
+.dual-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch; 
+  padding: 2rem;
+   background: linear-gradient(180deg, #f5f5dc93 0%, #f5f5dc93 100%);
+ 
+
+  .menu {
+    max-width: 600px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    border: 3px solid #e8d7bb;
+    box-shadow: 0 0 25px rgba(139, 69, 19, 0.25);
+    font-family: 'Cormorant Garamond', serif;
+    color: #4b3b2b;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    h2 {
+      font-size: 2.7rem;
+      margin-bottom: 0.6rem;
+      color: #6b3e2e;
+      font-weight: 600;
+      letter-spacing: 1px;
+       font-family: 'Lora', serif;
+    }
+
+    .bio {
+      font-size: 1.15rem;
+      margin-bottom: 3rem;
+      font-style: italic;
+      color: #7a5a3a;
+    }
+
+    .menu-section {
+      margin-bottom: 3rem;
+
+      h3 {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 0.2rem;
+        letter-spacing: 1px;
+        color: #8b5c2c;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          content: '❧';
+          display: block;
+          font-size: 1.3rem;
+          color: #c49a6c;
+          margin-top: 0.2rem;
+        }
+      }
+
+      h4 {
+        font-size: 1.15rem;
+        margin-bottom: 0.3rem;
+        font-weight: 500;
+        color: #4b3b2b;
+      }
+
+      .dates {
+        font-size: 0.95rem;
+        color: #7a5a3a;
+        margin-bottom: 0.6rem;
+        font-style: italic;
+      }
+
+      .description {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: #3f3024;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+.tech-menu {
+  background-color: #ebdfcf; 
+  border-color: #e8d7bb;
+}
+
+.hostelry-menu {
+  background-color: #d6b37f93; 
+  border-color: #e7cba1;
+}
+
+
+}

@@ -1,0 +1,54 @@
+<footer
+  class="w-full px-6 py-4 border-t-2 border-[#e8d7bb] bg-[#e7cba1cc] backdrop-blur-sm text-[#4b3b2b] flex flex-col md:flex-row items-center justify-between gap-4"
+  role="contentinfo"
+>
+  <!-- Social icons -->
+  <div class="flex flex-wrap gap-3 items-center justify-center md:justify-start" aria-label="Social links">
+    <a
+      [href]="linkedinUrl"
+      target="_blank"
+      rel="noopener"
+      [attr.aria-label]="'CONTACT.LINKEDIN' | translate"
+      class="w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 hover:text-[#764b2a] hover:bg-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#764b2a] focus-visible:bg-[#fff3e6cc]"
+    >
+      <svg class="w-[22px] h-[22px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v14H0V8zm7.5 0h4.8v2h.07c.67-1.27 2.3-2.6 4.73-2.6 5.05 0 6 3.3 6 7.6V22H17v-6.3c0-1.5-.03-3.42-2.1-3.42-2.1 0-2.42 1.64-2.42 3.34V22H7.5V8z"/>
+      </svg>
+    </a>
+
+    <a
+      [href]="githubUrl"
+      target="_blank"
+      rel="noopener"
+      [attr.aria-label]="'CONTACT.GITHUB' | translate"
+      class="w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 hover:text-[#764b2a] hover:bg-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#764b2a] focus-visible:bg-[#fff3e6cc]"
+    >
+      <svg class="w-[22px] h-[22px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 .5C5.65.5.5 5.65.5 12.04c0 5.07 3.29 9.36 7.85 10.88.57.1.78-.25.78-.56 0-.27-.01-1.16-.02-2.1-3.19.7-3.87-1.54-3.87-1.54-.52-1.33-1.26-1.69-1.26-1.69-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.72 2.65 1.23 3.3.94.1-.74.4-1.23.72-1.52-2.55-.3-5.24-1.28-5.24-5.69 0-1.26.45-2.3 1.18-3.11-.12-.3-.52-1.53.11-3.18 0 0 .97-.31 3.18 1.19a11.04 11.04 0 012.9-.39c.98 0 1.97.13 2.9.39 2.2-1.5 3.17-1.19 3.17-1.19.64 1.65.24 2.88.12 3.18.73.8 1.18 1.85 1.18 3.11 0 4.43-2.7 5.38-5.27 5.67.41.36.77 1.07.77 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.2.67.79.56A10.54 10.54 0 0023.5 12c0-6.4-5.15-11.5-11.5-11.5z"/>
+      </svg>
+    </a>
+
+    <a
+      [href]="email"
+      [attr.aria-label]="'CONTACT.EMAIL' | translate"
+      class="w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 hover:text-[#764b2a] hover:bg-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#764b2a] focus-visible:bg-[#fff3e6cc]"
+    >
+      <svg class="w-[22px] h-[22px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 12.713l11.985-7.213v13.5A2.792 2.792 0 0117.2 22H6.8A2.792 2.792 0 014 18.999v-13.5L12 12.713zm0-2.572L1.5 4.5h21L12 10.14z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- CV download -->
+  <div class="w-full md:w-auto flex justify-center">
+    <a
+      [href]="currentCv"
+      download
+      rel="noopener"
+      [attr.aria-label]="'CONTACT.DOWNLOAD_CV' | translate"
+      class="min-h-[44px] px-4 py-2 border border-[#4b3b2b] rounded-[10px] bg-[#fdf9f3] text-[#4b3b2b] transition-all duration-200 hover:bg-[#f1e7d6] hover:text-[#764b2a] hover:-translate-y-[1px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#764b2a] focus-visible:outline-offset-2 max-w-xs w-full text-center"
+    >
+      {{ 'CONTACT.DOWNLOAD_CV' | translate }}
+    </a>
+  </div>
+</footer>

@@ -1,0 +1,141 @@
+{
+  "NAV": {
+    "LANGUAGE": "Language",
+    "HOME": "Home",
+    "ABOUT": "About Me",
+    "PROJECTS": "Projects",
+    "EXPERIENCE": "Experience",
+    "CONTACT": "Contact"
+  },
+  "HOME": {
+    "INTRO": "Hi, I'm",
+    "NAME": " Silvia Tuiran",
+    "WELCOME": "Welcome to my personal space, a place where I share my passion for life, creativity, and the animals I deeply love."
+  },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "INTRO": "After 9 years between tables, customers, and stories served with every dish, I decided to transform that experience into something new.",
+    "EXPERIENCE": "Attention to detail, empathy, and the ability to understand people's needs didn’t stay behind — I brought them into the digital world...",
+    "HOBBY": "Today I'm a frontend developer, designing web experiences with the same sensitivity I learned working face-to-face with people.",
+    "BOOTCAMP": "I completed an intensive Frontend bootcamp with Angular at ITAcademy. I'm currently combining an internship at ITA Challenges with my job in hospitality, applying my new technical perspective.",
+    "SKILLS_TITLE": "Skills",
+    "SKILLS": {
+      "FRONTEND": "Frontend: Angular, HTML5, CSS3, TypeScript, RxJS",
+      "BACKEND": "Backend: Node.js, Express, MongoDB (foundations for full-stack)",
+      "HOSTELERIA": "Hospitality: Team leadership, conflict resolution, detail-oriented mindset",
+      "OTHERS": "Soft skills: Adaptability (from serving dishes to debugging code!), commitment, and love for challenges"
+    }
+  },
+  "EXPERIENCE_TECH": {
+    "TITLE": "Evolution Menu",
+    "BIO": "From serving dishes to serving components. A new menu, same passion for detail.",
+    "ENTRIES": [
+      {
+        "MOMENT": "From the dining room to Frontend",
+        "POSITION": "Web Development Bootcamp Student",
+        "COMPANY": "IT Academy (Barcelona Activa)",
+        "DATES": "Sept 2024 – Mar - 2025",
+        "DESCRIPTION": "Intensive training as a frontend developer. I learned Angular, JavaScript, TypeScript, Node.js, and solid foundations in responsive design, version control, and best practices. This is where it all began."
+      },
+      {
+        "MOMENT": "First tech mise en place",
+        "POSITION": "Angular Frontend Developer",
+        "COMPANY": "IT Academy (Barcelona Activa)",
+        "DATES": "Mar 2024 – Jul 2024",
+        "DESCRIPTION": "Active participation in developing a technical challenge platform for students. Collaborative work under Scrum methodology: sprint planning, daily standups, and team code reviews. Built complete Angular features, integrated REST APIs, and used Git professionally."
+      }
+    ],
+    "PROJECTS_TITLE": "Projects Served on a Platter",
+    "PROJECTS": [
+      {
+        "TITLE": "ConnectaPet",
+        "DESCRIPTION": "Final bootcamp project. An app for people with reactive dogs. Shows which dogs are in the dog park in real time, helping users decide whether to go. Includes a map and dog compatibility feature. Developed in Angular, connected to a Node API with cookie-based authentication."
+      },
+      {
+        "TITLE": "PlanItGo ECO",
+        "DESCRIPTION": "Training project focused on sustainable tourism in Barcelona. Organizes a 5-day itinerary calculating carbon footprint. Uses maps, an interactive calendar, and personalized statistics. Focused on accessibility, responsive UI, and best practices."
+      },
+      {
+        "TITLE": "StarWars",
+        "DESCRIPTION": "Web app developed during training. Consumes a public Star Wars API and displays characters, ships, and planets in a dynamic interface. Uses Firebase for hosting and authentication."
+      }
+    ]
+  },
+  "EXPERIENCE": {
+    "TITLE": "Root Menu",
+    "BIO": "A journey served in courses.",
+    "ENTRIES": [
+      {
+        "MOMENT": "Service begins",
+        "POSITION": "Manager",
+        "COMPANY": "La Burg (Barcelona)",
+        "DATES": "Jun 2016 – Feb 2020",
+        "DESCRIPTION": "My first contact with kitchen and front-of-house management. Learned to coordinate teams and maintain the pace in a very dynamic environment."
+      },
+      {
+        "MOMENT": "Leap to the antipodes",
+        "POSITION": "Waitress",
+        "COMPANY": "Bavarian (Australia)",
+        "DATES": "Jun 2020 – Feb 2021",
+        "DESCRIPTION": "Service in English and management of large events on the Australian coast. An international experience that pushed me out of my comfort zone."
+      },
+      {
+        "MOMENT": "Shift with a view",
+        "POSITION": "Manager",
+        "COMPANY": "Xiringuito Escribà (Empuriabrava)",
+        "DATES": "May 2021 – Dec 2021",
+        "DESCRIPTION": "Coordinated terrace service, provided multilingual customer care, and adapted to the fast-paced rhythm of summer by the sea."
+      },
+      {
+        "MOMENT": "Among kupelas",
+        "POSITION": "Maître",
+        "COMPANY": "Sagardi 1881",
+        "DATES": "Jan 2022 – Jul 2022",
+        "DESCRIPTION": "Front-of-house supervision in a premium Basque cuisine restaurant. Personalized customer service and team management in the dining room."
+      },
+      {
+        "MOMENT": "Boutique in motion",
+        "POSITION": "anager",
+        "COMPANY": "Casa de Comidas Buenavista",
+        "DATES": "Jul 2022 – Jun 2024",
+        "DESCRIPTION": "Restaurant within a boutique hotel. Coordinated shifts, managed service, and led a team in a refined and intimate setting."
+      }
+    ]
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "BIO": "Here are some of my featured projects: ConnectaPet, an app to register pets and find compatible dog parks in Barcelona; PlanitGo, a sustainable vacation planner with routes and CO₂ calculations; and Star Wars SPA, a serverless app that displays data on Star Wars ships and pilots.",
+    "VIEW": "View project",
+    "CONNECTAPET": {
+      "NAME": "ConnectaPet",
+      "DESCRIPTION": "App built with Angular and Node.js with MongoDB. Register your pet and connect with other dogs in Barcelona's dog parks, showing compatibility based on personality traits.",
+      "URL": "https://connectapet.silviatuiranb.es",
+      "GITHUB": "https://github.com/Silvitui/pipipark"
+    },
+    "PLANITGO": {
+      "NAME": "PlanitGo",
+      "DESCRIPTION": "Angular app with Firebase backend to plan sustainable vacations in Barcelona, generating routes with CO₂ emission calculations.",
+      "URL": "https://silvitui.github.io/inprocode/welcome",
+      "GITHUB": "https://github.com/Silvitui/inprocode"
+    },
+    "STARWARS": {
+      "NAME": "Star Wars",
+      "DESCRIPTION": "Serverless SPA in Angular that consumes an API with data on Star Wars ships and pilots.",
+      "URL": "https://starwars.silviatuiranb.es",
+      "GITHUB": "https://github.com/Silvitui/Star-Wars"
+    }
+  },
+  "CONTACT": {
+    "DOWNLOAD_CV": "Download CV",
+    "LINKEDIN": "LinkedIn",
+    "GITHUB": "GitHub",
+    "EMAIL": "Email"
+  },
+ "BOOTCAMP": {
+  "TITLE": "IT Academy Bootcamp",
+  "DESCRIPTION": "Intensive frontend training at Barcelona Activa.",
+  "CLICK_HINT": "Click the image to view the certificate.",
+  "ALT_IMAGE": "IT Academy Bootcamp Certificate"
+}
+
+}

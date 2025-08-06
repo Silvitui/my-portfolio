@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+  background: url('./assets/images/fondo5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #4b3b2b;
+  z-index: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(180deg, #f1f1ef65 0%, #ffffff93 100%);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0.4;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación solo para pantallas más grandes*/
+@media (min-width: 768px) {
+  .scroll-fade-in,
+  section,
+  article,
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  li,
+  .card,
+  .project,
+  .experience,
+  .contact-form {
+    animation-name: fadeInUp;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+    animation-fill-mode: both;
+  }
+}
+
+
+
