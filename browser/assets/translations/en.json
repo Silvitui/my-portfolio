@@ -7,11 +7,12 @@
     "EXPERIENCE": "Experience",
     "CONTACT": "Contact"
   },
-  "HOME": {
-    "INTRO": "Hi, I'm",
-    "NAME": " Silvia Tuiran",
-    "WELCOME": "Welcome to my personal space, a place where I share my passion for life, creativity, and the animals I deeply love."
-  },
+"HOME": {
+  "INTRO": "Hi, I'm",
+  "NAME": "Silvia Tuiran",
+  "ROLE": "I'm a frontend developer",
+  "WELCOME": "Welcome to my personal corner, a space where I share my passion for life, creative development, and of course, the animals I love so much."
+},
   "ABOUT": {
     "TITLE": "About Me",
     "INTRO": "After 9 years between tables, customers, and stories served with every dish, I decided to transform that experience into something new.",

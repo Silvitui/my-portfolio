@@ -8,10 +8,11 @@
     "CONTACT": "Contacto"
   },
   "HOME": {
-    "INTRO": "Hola, soy",
-    "NAME": " Silvia Tuiran",
-    "WELCOME": "Bienvenida a mi rincón personal, un espacio donde comparto mi pasión por la vida, el desarrollo creativo y, por supuesto, los animales que tanto amo."
-  },
+  "INTRO": "Hola, soy",
+  "NAME": "Silvia Tuiran",
+  "ROLE": "Soy desarrolladora frontend",
+  "WELCOME": "Bienvenida a mi rincón personal, un espacio donde comparto mi pasión por la vida, el desarrollo creativo y, por supuesto, los animales que tanto amo."
+},
   "ABOUT": {
     "TITLE": "Sobre mí",
     "INTRO": "Después de 9 años entre mesas, clientes e historias servidas en cada plato, decidí transformar esa experiencia en algo nuevo.",

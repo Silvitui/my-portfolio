@@ -7,11 +7,12 @@
     "EXPERIENCE": "Experiència",
     "CONTACT": "Contacte"
   },
-  "HOME": {
-    "INTRO": "Hola, soc",
-    "NAME": " Silvia Tuiran",
-    "WELCOME": "Benvinguda al meu espai personal, un lloc on comparteixo la meva passió per la vida, la creativitat i els animals que tant estimo."
-  },
+"HOME": {
+  "INTRO": "Hola, sóc",
+  "NAME": "Silvia Tuiran",
+  "ROLE": "Sóc desenvolupadora frontend",
+  "WELCOME": "Benvinguda al meu racó personal, un espai on comparteixo la meva passió per la vida, el desenvolupament creatiu i, per descomptat, els animals que tant estimo."
+},
   "ABOUT": {
     "TITLE": "Sobre mi",
     "INTRO": "Després de 9 anys entre taules, clients i històries servides a cada plat, vaig decidir transformar aquesta experiència en quelcom nou.",
