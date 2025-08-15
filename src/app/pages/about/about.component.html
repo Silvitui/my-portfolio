@@ -1,30 +1,39 @@
-<section class=" scroll-fade-in  min-h-screen flex items-center justify-center px-6 py-12 ">
-  <div class="scroll-fade-in max-w-6xl w-full bg-white/90 rounded-2xl shadow-lg p-8 flex flex-col lg:flex-row gap-10 items-center lg:items-start">
+<section class="scroll-fade-in min-h-screen flex items-center justify-center px-6 py-16">
+  <div class="max-w-6xl w-full bg-white/85 backdrop-blur-md rounded-2xl shadow-lg p-8
+              flex flex-col lg:flex-row gap-10 items-center lg:items-start
+              ring-1 ring-[#e7c3b1]/50">
+
     <div class="w-[260px] h-[260px] sm:w-[200px] sm:h-[200px] lg:w-[300px] lg:h-[300px] flex-shrink-0 mx-auto lg:mx-0">
-      <div class="rounded-full border-[6px] border-[#a67b5b] overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 bg-white">
-        <img src="assets/images/silvia_logan.jpg" alt="Silvia y Logan" class="w-full h-full object-cover object-top" />
+      <div class="rounded-full border-[6px] border-[#DCA085] overflow-hidden shadow-lg
+                  transition-transform duration-300 hover:scale-105 bg-white">
+        <img src="assets/images/silvia_logan.jpg" alt="Silvia_Logan" class="w-full h-full object-cover object-top" />
       </div>
     </div>
-    <div class="flex-1 text-[#4b3b2b]">
-      <h2 class="text-[2.5rem] font-bold text-[#764b2a] mb-6 text-center lg:text-left ">
+    <div class="flex-1 text-[#5C3D2E]">
+      <h2 class="text-[2.3rem] font-bold text-[#5C3D2E] mb-4 text-center lg:text-left font-['Playfair_Display']">
         {{ 'ABOUT.TITLE' | translate }}
       </h2>
+      <div class="h-[2px] w-20 bg-[#E5989B]/80 rounded-full mx-auto lg:mx-0 mb-6"></div>
 
-      <div class="space-y-4 text-base leading-relaxed text-justify sm:text-center lg:text-left">
+      <div class="space-y-4 text-base leading-relaxed sm:text-center lg:text-left text-[#7A5B4A]">
         <p>{{ 'ABOUT.INTRO' | translate }}</p>
         <p>{{ 'ABOUT.EXPERIENCE' | translate }}</p>
         <p>{{ 'ABOUT.BOOTCAMP' | translate }}</p>
         <p>{{ 'ABOUT.HOBBY' | translate }}</p>
       </div>
-      <div class="mt-10 ">
-        <h3 class="text-[2rem] font-bold text-[#764b2a] mb-4 text-center lg:text-left">
+      <div class="mt-10">
+        <h3 class="text-[1.8rem] font-semibold text-[#5C3D2E] mb-3 text-center lg:text-left font-['Playfair_Display']">
           {{ 'ABOUT.SKILLS_TITLE' | translate }}
         </h3>
+        <div class="h-[2px] w-16 bg-[#E9A4A8]/70 rounded-full mx-auto lg:mx-0 mb-6"></div>
+
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           @for (skill of skillIcons; track skill.name) {
-            <div class="bg-[#fffaf3] border-2 border-[#d4b184] rounded-xl p-4 text-center shadow-sm hover:-translate-y-1 transition-transform">
+            <div class="bg-[#FFF8F0] border border-[#e7c3b1]/60 rounded-xl p-4 text-center
+                        shadow-sm hover:-translate-y-1 transition-transform
+                        hover:shadow-[0_6px_18px_rgba(229,152,155,0.15)]">
               <img [src]="skill.icon" [alt]="skill.name" class="w-12 h-12 mx-auto mb-2" />
-              <p class="text-sm font-medium">{{ skill.name }}</p>
+              <p class="text-sm font-medium text-[#7A5B4A]">{{ skill.name }}</p>
             </div>
           }
         </div>
@@ -32,3 +41,4 @@
     </div>
   </div>
 </section>
+

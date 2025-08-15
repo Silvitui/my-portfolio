@@ -9,7 +9,8 @@
   },
   "HOME": {
     "INTRO": "Hola, soy",
-    "NAME": " Silvia Tuiran",
+    "NAME": "Silvia Tuiran",
+    "ROLE": "Soy desarrolladora frontend",
     "WELCOME": "Bienvenida a mi rincón personal, un espacio donde comparto mi pasión por la vida, el desarrollo creativo y, por supuesto, los animales que tanto amo."
   },
   "ABOUT": {
@@ -21,119 +22,115 @@
     "SKILLS_TITLE": "Habilidades"
   },
   "EXPERIENCE_TECH": {
-  "TITLE": "Carta evolución",
-  "BIO": "De servir platos a servir componentes. Una nueva carta, misma pasión por el detalle.",
-  "ENTRIES": [
-    {
-      "MOMENT": "De sala a Frontend",
-      "POSITION": "Alumna del bootcamp de desarrollo web",
-      "COMPANY": "IT Academy (Barcelona Activa)",
-      "DATES": "Sept 2024 – Mar - 2025",
-      "DESCRIPTION": "Formación intensiva como desarrolladora frontend. Aprendí Angular, JavaScript, TypeScript, Node.js, y bases sólidas de diseño responsive, control de versiones y buenas prácticas. Aquí empezó todo."
-    },
-    {
-      "MOMENT": "Primera mise en place tech",
-      "POSITION": "Desalloradora frontend Angular",
-      "COMPANY": "IT Academy (Barcelona Activa)",
-      "DATES": "Mar 2024 – Jul 2024",
-      "DESCRIPTION": "Participación activa en el desarrollo de una plataforma de retos técnicos para estudiantes. Trabajo colaborativo bajo metodología Scrum: planificación de sprints, dailys, y revisión de código en equipo. Implementación de funcionalidades completas en Angular, integración con APIs REST y uso profesional de Git."
-    }
-  ],
-  "PROJECTS_TITLE": "Proyectos servidos en bandeja",
-"PROJECTS": [
-  {
-    "TITLE": "ConnectaPet",
-    "DESCRIPTION": "Proyecto final del bootcamp. Una app para personas con perros reactivos. Muestra qué perros están en el pipicán en tiempo real, permitiendo decidir si ir o no. Incluye mapa y compatibilidad entre perros. Desarrollada en Angular, conectada a una API Node con autenticación por cookies."
+    "TITLE": "Carta evolución",
+    "BIO": "De servir platos a servir componentes. Una nueva carta, misma pasión por el detalle.",
+    "ENTRIES": [
+      {
+        "MOMENT": "De sala a Frontend",
+        "POSITION": "Alumna del bootcamp de desarrollo web",
+        "COMPANY": "IT Academy (Barcelona Activa)",
+        "DATES": "Sept 2024 – Mar - 2025",
+        "DESCRIPTION": "Formación intensiva como desarrolladora frontend. Aprendí Angular, JavaScript, TypeScript, Node.js, y bases sólidas de diseño responsive, control de versiones y buenas prácticas. Aquí empezó todo."
+      },
+      {
+        "MOMENT": "Primera mise en place tech",
+        "POSITION": "Desalloradora frontend Angular",
+        "COMPANY": "IT Academy (Barcelona Activa)",
+        "DATES": "Mar 2024 – Jul 2024",
+        "DESCRIPTION": "Participación activa en el desarrollo de una plataforma de retos técnicos para estudiantes. Trabajo colaborativo bajo metodología Scrum: planificación de sprints, dailys, y revisión de código en equipo. Implementación de funcionalidades completas en Angular, integración con APIs REST y uso profesional de Git."
+      }
+    ],
+    "PROJECTS_TITLE": "Proyectos servidos en bandeja",
+    "PROJECTS": [
+      {
+        "TITLE": "ConnectaPet",
+        "DESCRIPTION": "Proyecto final del bootcamp. Una app para personas con perros reactivos. Muestra qué perros están en el pipicán, permitiendo decidir si ir o no. Incluye mapa y compatibilidad entre perros. Desarrollada en Angular, conectada a una API Node con autenticación por cookies."
+      },
+      {
+        "TITLE": "PlanItGo ECO",
+        "DESCRIPTION": "Aplicación formativa centrada en turismo sostenible en Barcelona. Organiza un itinerario de 5 días calculando la huella de carbono. Uso de mapas, calendario interactivo y estadísticas personalizadas."
+      },
+      {
+        "TITLE": "StarWars",
+        "DESCRIPTION": "Web desarrollada como parte de la formación. Consume una API pública de Star Wars y muestra personajes, naves y planetas en una interfaz dinámica. Uso de Firebase para hosting y autenticación."
+      }
+    ]
   },
-  {
-    "TITLE": "PlanItGo ECO",
-    "DESCRIPTION": "Aplicación formativa centrada en turismo sostenible en Barcelona. Organiza un itinerario de 5 días calculando la huella de carbono. Uso de mapas, calendario interactivo y estadísticas personalizadas. Enfocada en accesibilidad, UI responsiva y buenas prácticas."
-  },
-  {
-    "TITLE": "StarWars",
-    "DESCRIPTION": "Web desarrollada como parte de la formación. Consume una API pública de Star Wars y muestra personajes, naves y planetas en una interfaz dinámica. Uso de Firebase para hosting y autenticación."
-  }
-]
 
-},
-
-"EXPERIENCE": {
-  "TITLE": "Carta raíz",
-  "BIO": "Una trayectoria servida en tiempos.",
-  "ENTRIES": [
-    {
-      "MOMENT": "Empieza el servicio",
-      "POSITION": "Responsable de sala",
-      "COMPANY": "La Burg (Barcelona)",
-      "DATES": "Jun 2016 – Feb 2020",
-      "DESCRIPTION": "Mi primer contacto con la gestión de cocina y sala. Aprendí a coordinar equipos y mantener el ritmo en un entorno muy dinámico."
+  "EXPERIENCE": {
+    "TITLE": "Carta raíz",
+    "BIO": "Una trayectoria servida en tiempos.",
+    "ENTRIES": [
+      {
+        "MOMENT": "Empieza el servicio",
+        "POSITION": "Responsable de sala",
+        "COMPANY": "La Burg (Barcelona)",
+        "DATES": "Jun 2016 – Feb 2020",
+        "DESCRIPTION": "Mi primer contacto con la gestión de cocina y sala. Aprendí a coordinar equipos y mantener el ritmo en un entorno muy dinámico."
+      },
+      {
+        "MOMENT": "Salto a las antípodas",
+        "POSITION": "Camarera",
+        "COMPANY": "Bavarian (Australia)",
+        "DATES": "Jun 2020 – Feb 2021",
+        "DESCRIPTION": "Servicio en inglés y gestión de eventos masivos en la costa australiana. Una experiencia internacional que me empujó fuera de mi zona de confort."
+      },
+      {
+        "MOMENT": "Turno con vistas",
+        "POSITION": "Segunda responsable de sala",
+        "COMPANY": "Xiringuito Escribà (Empuriabrava)",
+        "DATES": "May 2021 – Dic 2021",
+        "DESCRIPTION": "Coordinación de servicio en terraza, atención multilingüe y adaptación al ritmo exigente del verano frente al mar."
+      },
+      {
+        "MOMENT": "Entre kupelas",
+        "POSITION": "Maître",
+        "COMPANY": "Sagardi 1881",
+        "DATES": "Ene 2022 – Jul 2022",
+        "DESCRIPTION": "Supervisión de sala en un restaurante de cocina vasca premium. Atención personalizada a clientes y gestión de equipo en sala."
+      },
+      {
+        "MOMENT": "Boutique en marcha",
+        "POSITION": "Responsable de sala",
+        "COMPANY": "Casa de Comidas Buenavista",
+        "DATES": "Jul 2022 – Jun 2024",
+        "DESCRIPTION": "Restaurante de un hotel boutique. Coordinación de turnos, gestión de servicio y liderazgo de equipo en un entorno cuidado y cercano."
+      }
+    ]
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "BIO": "Estos son algunos de mis proyectos destacados: ConnectaPet, una app para registrar mascotas y encontrar pipicanes compatibles en Barcelona; PlanitGo, un planificador de vacaciones sostenibles con rutas y cálculo de CO₂; y Star Wars SPA, una app serverless que muestra datos de naves y pilotos de Star Wars.",
+    "VIEW": "Ver proyecto",
+    "CONNECTAPET": {
+      "NAME": "ConnectaPet",
+      "DESCRIPTION": "Aplicación desarrollada con Angular, Node.js, Express y MongoDB, utilizando Tailwind CSS y DaisyUI. Permite registrar a tu mascota y conectar con otros perros en los pipicanes de Barcelona, mostrando el grado de compatibilidad según sus rasgos de personalidad.",
+      "URL": "https://connectapet.silviatuiranb.es",
+      "GITHUB": "https://github.com/Silvitui/pipipark"
     },
-    {
-      "MOMENT": "Salto a las antípodas",
-      "POSITION": "Camarera",
-      "COMPANY": "Bavarian (Australia)",
-      "DATES": "Jun 2020 – Feb 2021",
-      "DESCRIPTION": "Servicio en inglés y gestión de eventos masivos en la costa australiana. Una experiencia internacional que me empujó fuera de mi zona de confort."
+    "PLANITGO": {
+      "NAME": "PlanitGo",
+      "DESCRIPTION": "Web de escritorio creada con Angular, Node.js, Express y MongoDB, utilizando Tailwind CSS. Ayuda a planificar vacaciones sostenibles en Barcelona con rutas optimizadas y cálculo de emisiones de CO₂ para un turismo más responsable.",
+      "URL": "https://silvitui.github.io/inprocode/welcome",
+      "GITHUB": "https://github.com/Silvitui/inprocode"
     },
-    {
-      "MOMENT": "Turno con vistas",
-      "POSITION": "Segunda responsable de sala",
-      "COMPANY": "Xiringuito Escribà (Empuriabrava)",
-      "DATES": "May 2021 – Dic 2021",
-      "DESCRIPTION": "Coordinación de servicio en terraza, atención multilingüe y adaptación al ritmo exigente del verano frente al mar."
-    },
-    {
-      "MOMENT": "Entre kupelas",
-      "POSITION": "Maître",
-      "COMPANY": "Sagardi 1881",
-      "DATES": "Ene 2022 – Jul 2022",
-      "DESCRIPTION": "Supervisión de sala en un restaurante de cocina vasca premium. Atención personalizada a clientes y gestión de equipo en sala."
-    },
-    {
-      "MOMENT": "Boutique en marcha",
-      "POSITION": "Responsable de sala",
-      "COMPANY": "Casa de Comidas Buenavista",
-      "DATES": "Jul 2022 – Jun 2024",
-      "DESCRIPTION": "Restaurante de un hotel boutique. Coordinación de turnos, gestión de servicio y liderazgo de equipo en un entorno cuidado y cercano."
+    "STARWARS": {
+      "NAME": "Star Wars",
+      "DESCRIPTION": "Web de escritorio SPA serverless en Angular que consume una API con información de naves y pilotos del universo Star Wars. Actualmente no es responsive, pero estoy trabajando en su optimización.",
+      "URL": "https://starwars.silviatuiranb.es",
+      "GITHUB": "https://github.com/Silvitui/Star-Wars"
     }
-  ]
-},
-"PROJECTS": {
-  "TITLE": "Proyectos",
-  "BIO": "Estos son algunos de mis proyectos destacados: ConnectaPet, una app para registrar mascotas y encontrar pipicanes compatibles en Barcelona; PlanitGo, un planificador de vacaciones sostenibles con rutas y cálculo de CO₂; y Star Wars SPA, una app serverless que muestra datos de naves y pilotos de Star Wars.",
-  "VIEW": "Ver proyecto",
-  "CONNECTAPET": {
-    "NAME": "ConnectaPet",
-    "DESCRIPTION": "App hecha con Angular y Node.js con MongoDB. Registra tu mascota y conecta con otros perros en los pipicanes de Barcelona, mostrando la compatibilidad basada en rasgos de personalidad.",
-    "URL": "https://connectapet.silviatuiranb.es",
-    "GITHUB": "https://github.com/Silvitui/pipipark"
   },
-  "PLANITGO": {
-    "NAME": "PlanitGo",
-    "DESCRIPTION": "App Angular con backend en Firebase para planificar vacaciones sostenibles en Barcelona, generando rutas con cálculo de emisiones de CO₂.",
-    "URL": "https://silvitui.github.io/inprocode/welcome",
-    "GITHUB": "https://github.com/Silvitui/inprocode"
-  },
-  "STARWARS": {
-    "NAME": "Star Wars",
-    "DESCRIPTION": "SPA serverless en Angular que consume una API con datos de naves y pilotos de Star Wars.",
-    "URL": "https://starwars.silviatuiranb.es",
-    "GITHUB": "https://github.com/Silvitui/Star-Wars"
-  }
-},
   "CONTACT": {
     "DOWNLOAD_CV": "Descargar CV",
     "LINKEDIN": "LinkedIn",
     "GITHUB": "GitHub",
     "EMAIL": "Email"
   },
-"BOOTCAMP": {
-  "TITLE": "Bootcamp IT Academy",
-  "DESCRIPTION": "Formación intensiva en desarrollo frontend en Barcelona Activa.",
-  "CLICK_HINT": "Haz clic en la imagen para ver el certificado.",
-  "ALT_IMAGE": "Certificado Bootcamp IT Academy"
+  "BOOTCAMP": {
+    "TITLE": "Bootcamp IT Academy",
+    "DESCRIPTION": "Formación intensiva en desarrollo frontend en Barcelona Activa.",
+    "CLICK_HINT": "Haz clic en la imagen para ver el certificado.",
+    "ALT_IMAGE": "Certificado Bootcamp IT Academy"
+  }
 }
-
-  
-}
-

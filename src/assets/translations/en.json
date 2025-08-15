@@ -9,8 +9,9 @@
   },
   "HOME": {
     "INTRO": "Hi, I'm",
-    "NAME": " Silvia Tuiran",
-    "WELCOME": "Welcome to my personal space, a place where I share my passion for life, creativity, and the animals I deeply love."
+    "NAME": "Silvia Tuiran",
+    "ROLE": "I'm a frontend developer",
+    "WELCOME": "Welcome to my personal corner, a space where I share my passion for life, creative development, and of course, the animals I love so much."
   },
   "ABOUT": {
     "TITLE": "About Me",
@@ -49,11 +50,11 @@
     "PROJECTS": [
       {
         "TITLE": "ConnectaPet",
-        "DESCRIPTION": "Final bootcamp project. An app for people with reactive dogs. Shows which dogs are in the dog park in real time, helping users decide whether to go. Includes a map and dog compatibility feature. Developed in Angular, connected to a Node API with cookie-based authentication."
+        "DESCRIPTION": "Final bootcamp project. An app for people with reactive dogs. Shows which dogs are in the dog park, helping users decide whether to go. Includes a map and dog compatibility feature. Developed in Angular, connected to a Node API with cookie-based authentication."
       },
       {
         "TITLE": "PlanItGo ECO",
-        "DESCRIPTION": "Training project focused on sustainable tourism in Barcelona. Organizes a 5-day itinerary calculating carbon footprint. Uses maps, an interactive calendar, and personalized statistics. Focused on accessibility, responsive UI, and best practices."
+        "DESCRIPTION": "Training project focused on sustainable tourism in Barcelona. Organizes a 5-day itinerary calculating carbon footprint. Uses maps, an interactive calendar, and personalized statistics."
       },
       {
         "TITLE": "StarWars",
@@ -108,19 +109,19 @@
     "VIEW": "View project",
     "CONNECTAPET": {
       "NAME": "ConnectaPet",
-      "DESCRIPTION": "App built with Angular and Node.js with MongoDB. Register your pet and connect with other dogs in Barcelona's dog parks, showing compatibility based on personality traits.",
+      "DESCRIPTION": "Application built with Angular, Node.js, Express, and MongoDB, using Tailwind CSS and DaisyUI. Allows you to register your pet and connect with other dogs in Barcelona’s dog parks, showing compatibility based on personality traits.",
       "URL": "https://connectapet.silviatuiranb.es",
       "GITHUB": "https://github.com/Silvitui/pipipark"
     },
     "PLANITGO": {
       "NAME": "PlanitGo",
-      "DESCRIPTION": "Angular app with Firebase backend to plan sustainable vacations in Barcelona, generating routes with CO₂ emission calculations.",
+      "DESCRIPTION": "Desktop web built with Angular, Node.js, Express, and MongoDB, using Tailwind CSS. Helps plan sustainable vacations in Barcelona with optimized routes and CO₂ emissions calculation for more responsible tourism.",
       "URL": "https://silvitui.github.io/inprocode/welcome",
       "GITHUB": "https://github.com/Silvitui/inprocode"
     },
     "STARWARS": {
       "NAME": "Star Wars",
-      "DESCRIPTION": "Serverless SPA in Angular that consumes an API with data on Star Wars ships and pilots.",
+      "DESCRIPTION": "Desktop SPA serverless web built with Angular that consumes an API with data about ships and pilots from the Star Wars universe. Currently not responsive, but I’m working on its optimization.",
       "URL": "https://starwars.silviatuiranb.es",
       "GITHUB": "https://github.com/Silvitui/Star-Wars"
     }
@@ -131,11 +132,10 @@
     "GITHUB": "GitHub",
     "EMAIL": "Email"
   },
- "BOOTCAMP": {
-  "TITLE": "IT Academy Bootcamp",
-  "DESCRIPTION": "Intensive frontend training at Barcelona Activa.",
-  "CLICK_HINT": "Click the image to view the certificate.",
-  "ALT_IMAGE": "IT Academy Bootcamp Certificate"
-}
-
+  "BOOTCAMP": {
+    "TITLE": "IT Academy Bootcamp",
+    "DESCRIPTION": "Intensive frontend training at Barcelona Activa.",
+    "CLICK_HINT": "Click the image to view the certificate.",
+    "ALT_IMAGE": "IT Academy Bootcamp Certificate"
+  }
 }

@@ -1,61 +1,90 @@
-<nav  [class.-translate-y-full]="!showNavbar()" class="fixed top-0 left-0 right-0 z-50 bg-[rgba(180,145,100,0.57)] px-4 py-2 shadow-md">
-  <div class="navbar justify-between flex-wrap">
-    <div class="flex md:hidden">
-      <button class="btn btn-ghost" (click)="toggleMenu()" aria-label="Menú">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-             viewBox="0 0 24 24" stroke="currentColor">
-          <path [attr.d]="isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-        </svg>
-      </button>
-    </div>
-    <ul class="hidden md:flex gap-6 text-lg items-center">
+<nav
+  [class.-translate-y-full]="!showNavbar()"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300
+         bg-gradient-to-r from-[#FFE5D4]/85 via-[#FFF8F0]/80 to-[#FAE1DD]/85
+         backdrop-blur-xl border-b border-[#e7c3b1]/50 shadow-lg px-8 py-5"
+>
+  <div class="w-full flex items-center gap-8">
+    <a href="/"
+       class="tracking-[0.1em] text-[15px] text-[#5C3D2E] font-semibold uppercase">
+      Silvia Tuiran
+    </a>
+    <ul class="ml-6 flex-1 hidden md:flex items-center gap-9">
       @for (link of navLinks; track link.labelKey) {
         <li>
           <a
             [href]="link.path"
-            class="relative py-1 transition-colors hover:text-[#764b2a] text-[#f5f5dc]"
-            [class.active]="isActive(link.path)"
+            class="group relative text-[16px] tracking-wide
+                   text-[#7A5B4A]/90 hover:text-[#5C3D2E] transition-colors"
+            [ngClass]="{'text-[#5C3D2E]': isActive(link.path)}"
           >
             {{ link.labelKey | translate }}
-            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#764b2a] transition-all duration-300 group-hover:w-full"></span>
+            <span class="absolute -bottom-2 left-0 h-[1.5px] w-full origin-left scale-x-0
+                         bg-[#E5989B]/90 rounded-full
+                         transition-transform duration-300 group-hover:scale-x-100"></span>
           </a>
         </li>
       }
     </ul>
-
-    <div class="hidden md:flex items-center gap-2 ml-auto">
+    <div class="hidden md:flex items-center">
       <select
         id="lang"
-        class="select select-sm bg-[#f5f5dc] border-[#a37653] text-[#4b3b2b] font-['Cinzel'] rounded-md shadow-sm hover:border-[#764b2a] focus:outline-none focus:ring-2 focus:ring-[#764b2a] transition"
+        class="appearance-none bg-none select select-sm h-9 px-3 pr-8 rounded-lg border border-[#e7c3b1]/50
+               bg-white/90 text-[#5C3D2E]/90 shadow-sm font-sans tracking-normal
+               focus:outline-none focus:ring-2 focus:ring-[#E5989B]/30
+               hover:border-[#E5989B]/60 transition"
         [value]="currentLang()"
         (change)="changeLang($any($event.target).value)"
+        aria-label="Idioma"
       >
         @for (lang of supportedLangs; track lang) {
           <option [value]="lang">{{ getLangLabel(lang) }}</option>
         }
       </select>
     </div>
+
+    <!-- Burger-->
+    <button
+      class="ml-auto md:hidden h-10 w-10 grid place-items-center rounded-md
+             text-[#5C3D2E]/80 hover:text-[#5C3D2E] hover:bg-black/5 transition"
+      (click)="toggleMenu()"
+      aria-label="Menú"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path [attr.d]="isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </svg>
+    </button>
   </div>
   @if (isOpen) {
-    <ul class="flex flex-col gap-1  md:hidden text-sm items-center  py-2 rounded-b-lg ">
+    <ul
+      class="md:hidden px-4 py-4 space-y-2"
+    >
       @for (link of navLinks; track link.labelKey) {
         <li>
           <a
             [href]="link.path"
-            class="block py-1 text-[#f5f5dc] hover:text-[#764b2a]"
+            class="block px-3 py-2 rounded-md text-[15px]
+                   text-[#7A5B4A]/90 hover:text-[#5C3D2E]
+                   hover:bg-black/5 transition"
+            [ngClass]="{'text-[#5C3D2E]': isActive(link.path)}"
             (click)="toggleMenu()"
           >
             {{ link.labelKey | translate }}
           </a>
         </li>
       }
-      <li class="flex items-center gap-2 mt-2">
+      <li class="pt-2">
         <select
           id="langMobile"
-          class="select select-bordered select-sm bg-white"
+          class="appearance-none bg-none select select-bordered select-sm w-full h-9 rounded-lg
+                 bg-white text-[#5C3D2E]/90 border border-[#e7c3b1]/50
+                 font-sans tracking-normal
+                 focus:outline-none focus:ring-2 focus:ring-[#E5989B]/30"
           [value]="currentLang()"
           (change)="changeLang($any($event.target).value)"
+          aria-label="Idioma móvil"
         >
           @for (lang of supportedLangs; track lang) {
             <option [value]="lang">{{ getLangLabel(lang) }}</option>

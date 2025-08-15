@@ -17,8 +17,8 @@ export class FooterComponent {
   email       = 'mailto:silviatuiranb@gmail.com';
 
   cvLinks: Record<string, string> = {
-    es: 'assets/cv/CV_SILVIA_TUIRAN_CASTELLANO.pdf',
-    en: 'assets/cv/CV_SILVIA_TUIRAN_ENGLISH.pdf',
+    es: 'assets/cv/CV_SILVIA_TUIRAN_ES.pdf',
+    en: 'assets/cv/CV_SILVIA_TUIRAN_EN.pdf',
 
   };
    get currentCv(): string {

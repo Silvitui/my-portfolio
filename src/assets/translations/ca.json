@@ -8,9 +8,10 @@
     "CONTACT": "Contacte"
   },
   "HOME": {
-    "INTRO": "Hola, soc",
-    "NAME": " Silvia Tuiran",
-    "WELCOME": "Benvinguda al meu espai personal, un lloc on comparteixo la meva passió per la vida, la creativitat i els animals que tant estimo."
+    "INTRO": "Hola, sóc",
+    "NAME": "Silvia Tuiran",
+    "ROLE": "Sóc desenvolupadora frontend",
+    "WELCOME": "Benvinguda al meu racó personal, un espai on comparteixo la meva passió per la vida, el desenvolupament creatiu i, per descomptat, els animals que tant estimo."
   },
   "ABOUT": {
     "TITLE": "Sobre mi",
@@ -49,11 +50,11 @@
     "PROJECTS": [
       {
         "TITLE": "ConnectaPet",
-        "DESCRIPTION": "Projecte final del bootcamp. Una app per a persones amb gossos reactius. Mostra quins gossos hi ha al pipicà en temps real, permetent decidir si anar-hi o no. Inclou mapa i compatibilitat entre gossos. Desenvolupada en Angular, connectada a una API Node amb autenticació per cookies."
+        "DESCRIPTION": "Projecte final del bootcamp. Una app per a persones amb gossos reactius. Mostra quins gossos hi ha al pipicà, permetent decidir si anar-hi o no. Inclou mapa i compatibilitat entre gossos. Desenvolupada en Angular, connectada a una API Node amb autenticació per cookies."
       },
       {
         "TITLE": "PlanItGo ECO",
-        "DESCRIPTION": "Aplicació formativa centrada en turisme sostenible a Barcelona. Organitza un itinerari de 5 dies calculant la petjada de carboni. Ús de mapes, calendari interactiu i estadístiques personalitzades. Enfocada en accessibilitat, UI responsiva i bones pràctiques."
+        "DESCRIPTION": "Aplicació formativa centrada en turisme sostenible a Barcelona. Organitza un itinerari de 5 dies calculant la petjada de carboni. Ús de mapes, calendari interactiu i estadístiques personalitzades."
       },
       {
         "TITLE": "StarWars",
@@ -102,25 +103,25 @@
       }
     ]
   },
-   "PROJECTS": {
+  "PROJECTS": {
     "TITLE": "Projectes",
     "BIO": "Aquests són alguns dels meus projectes destacats: ConnectaPet, una app per registrar mascotes i trobar pipicans compatibles a Barcelona; PlanitGo, un planificador de vacances sostenibles amb rutes i càlcul de CO2; i Star Wars SPA, una app serverless que mostra dades de naus i pilots de Star Wars.",
     "VIEW": "Veure projecte",
     "CONNECTAPET": {
       "NAME": "ConnectaPet",
-      "DESCRIPTION": "App feta amb Angular i Node.js amb MongoDB. Registra la teva mascota i connecta amb altres gossos als pipicans de Barcelona, mostrant la compatibilitat basada en trets de personalitat.",
+      "DESCRIPTION": "Aplicació desenvolupada amb Angular, Node.js, Express i MongoDB, utilitzant Tailwind CSS i DaisyUI. Permet registrar la teva mascota i connectar amb altres gossos als pipicans de Barcelona, mostrant el grau de compatibilitat segons els seus trets de personalitat.",
       "URL": "https://connectapet.silviatuiranb.es",
       "GITHUB": "https://github.com/Silvitui/pipipark"
     },
     "PLANITGO": {
       "NAME": "PlanitGo",
-      "DESCRIPTION": "App Angular amb backend a Firebase per planificar vacances sostenibles a Barcelona, generant rutes amb càlcul d’emissions de CO2.",
+      "DESCRIPTION": "Web d’escriptori creada amb Angular, Node.js, Express i MongoDB, utilitzant Tailwind CSS. Ajuda a planificar vacances sostenibles a Barcelona amb rutes optimitzades i càlcul d’emissions de CO₂ per a un turisme més responsable.",
       "URL": "https://silvitui.github.io/inprocode/welcome",
       "GITHUB": "https://github.com/Silvitui/inprocode"
     },
     "STARWARS": {
       "NAME": "Star Wars",
-      "DESCRIPTION": "SPA serverless en Angular que consumeix una API amb dades de naus i pilots de Star Wars.",
+      "DESCRIPTION": "Web d’escriptori SPA serverless en Angular que consumeix una API amb informació de naus i pilots de l’univers Star Wars. Actualment no és responsive, però estic treballant per optimitzar-la.",
       "URL": "https://starwars.silviatuiranb.es",
       "GITHUB": "https://github.com/Silvitui/Star-Wars"
     }
@@ -131,11 +132,10 @@
     "GITHUB": "GitHub",
     "EMAIL": "Correu electrònic"
   },
- "BOOTCAMP": {
-  "TITLE": "Bootcamp IT Academy",
-  "DESCRIPTION": "Formació intensiva en desenvolupament frontend a Barcelona Activa.",
-  "CLICK_HINT": "Clica la imatge per veure el certificat.",
-  "ALT_IMAGE": "Certificat del Bootcamp IT Academy"
-}
-
+  "BOOTCAMP": {
+    "TITLE": "Bootcamp IT Academy",
+    "DESCRIPTION": "Formació intensiva en desenvolupament frontend a Barcelona Activa.",
+    "CLICK_HINT": "Clica la imatge per veure el certificat.",
+    "ALT_IMAGE": "Certificat del Bootcamp IT Academy"
+  }
 }

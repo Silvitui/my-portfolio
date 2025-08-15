@@ -1,51 +1,85 @@
-<section class="flex flex-wrap justify-center items-stretch gap-8 p-8 ">
-  <div class="bg-[#ebdfcf] border-[3px] border-[#e8d7bb] shadow-xl max-w-[90vw] md:max-w-xl flex-1 flex flex-col justify-between rounded-2xl px-6 sm:px-8 py-10 text-[#4b3b2b] text-center">
-    <h2 class="text-[2.7rem] mb-6 text-[#6b3e2e] font-[Cormorant_Garamond] italic font-semibold tracking-wide">
-      {{ 'EXPERIENCE_TECH.TITLE' | translate }}
-    </h2>
-    <p class="text-[1.15rem] italic text-[#7a5a3a] mb-12 font-[Lora]">
-      {{ 'EXPERIENCE_TECH.BIO' | translate }}
-    </p>
+<section class="scroll-fade-in px-6 py-16">
+  <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
 
-    @for (exp of experienceTech(); track exp.MOMENT) {
-      <div class="mb-12 font-[Lora]">
-        <h3 class="text-[1.3rem] uppercase mb-1 tracking-wide text-[#8b5c2c] relative inline-block after:content-['❧'] after:block after:text-[1.3rem] after:text-[#c49a6c] after:mt-1">
-          {{ exp.MOMENT }}
-        </h3>
-        <h4 class="text-[1.15rem] font-medium mb-1">{{ exp.POSITION }} – {{ exp.COMPANY }}</h4>
-        <p class="text-[0.95rem] italic text-[#7a5a3a] mb-2">{{ exp.DATES }}</p>
-        <p class="text-[1.05rem] leading-[1.7] text-[#3f3024] max-w-[90%] mx-auto">{{ exp.DESCRIPTION }}</p>
+    <!-- Experiencia técnica -->
+    <div class="bg-white/85 backdrop-blur-md rounded-2xl shadow-lg ring-1 ring-[#e7c3b1]/60 p-8 text-[#5C3D2E]">
+      <h2 class="text-[2.2rem] font-bold font-['Playfair_Display'] mb-2 text-center md:text-left">
+        {{ 'EXPERIENCE_TECH.TITLE' | translate }}
+      </h2>
+      <div class="h-[2px] w-20 bg-[#E6B8A2] rounded-full mx-auto md:mx-0 mb-6"></div>
+
+      <p class="text-base italic text-[#7A5B4A] mb-8 font-[Lora]">
+        {{ 'EXPERIENCE_TECH.BIO' | translate }}
+      </p>
+
+      <!-- Timeline -->
+      <div class="space-y-8">
+        @for (exp of experienceTech(); track exp.MOMENT) {
+          <article class="relative pl-6">
+            <div class="absolute left-0 top-1 h-full border-l border-[#E6B8A2]/70"></div>
+            <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-[#E6B8A2] ring-2 ring-white/70"></span>
+
+            <h3 class="text-sm uppercase tracking-wide text-[#7A5B4A] font-semibold">
+              {{ exp.MOMENT }}
+            </h3>
+            <h4 class="text-[1.05rem] font-medium mt-1">
+              {{ exp.POSITION }} – <span class="font-semibold">{{ exp.COMPANY }}</span>
+            </h4>
+            <p class="text-sm italic text-[#7A5B4A] mt-0.5">{{ exp.DATES }}</p>
+            <p class="text-[1rem] leading-7 text-[#4b3b2b] mt-2">
+              {{ exp.DESCRIPTION }}
+            </p>
+          </article>
+        }
+
+        <!-- Proyectos técnicos -->
+        @for (project of techProjects(); track project.TITLE) {
+          <article class="relative pl-6">
+            <div class="absolute left-0 top-1 h-full border-l border-[#E6B8A2]/70"></div>
+            <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-[#E6B8A2] ring-2 ring-white/70"></span>
+
+            <h3 class="text-[1.05rem] font-semibold">
+              {{ project.TITLE }}
+            </h3>
+            <p class="text-[1rem] leading-7 text-[#4b3b2b] mt-1">
+              {{ project.DESCRIPTION }}
+            </p>
+          </article>
+        }
       </div>
-    }
+    </div>
 
-    @for (project of techProjects(); track project.TITLE) {
-      <div class="mb-12 font-[Lora]">
-        <h3 class="text-[1.3rem] uppercase mb-1 tracking-wide text-[#8b5c2c] relative inline-block after:content-['❧'] after:block after:text-[1.3rem] after:text-[#c49a6c] after:mt-1">
-          {{ project.TITLE }}
-        </h3>
-        <p class="text-[1.05rem] leading-[1.7] text-[#3f3024] max-w-[90%] mx-auto">{{ project.DESCRIPTION }}</p>
+    <!-- Experiencia (hostelería u otra) -->
+    <div class="bg-white/85 backdrop-blur-md rounded-2xl shadow-lg ring-1 ring-[#e7c3b1]/60 p-8 text-[#5C3D2E]">
+      <h2 class="text-[2.2rem] font-bold font-['Playfair_Display'] mb-2 text-center md:text-left">
+        {{ 'EXPERIENCE.TITLE' | translate }}
+      </h2>
+      <div class="h-[2px] w-20 bg-[#E6B8A2] rounded-full mx-auto md:mx-0 mb-6"></div>
+
+      <p class="text-base italic text-[#7A5B4A] mb-8 font-[Lora]">
+        {{ 'EXPERIENCE.BIO' | translate }}
+      </p>
+
+      <div class="space-y-8">
+        @for (exp of experiences(); track exp.MOMENT) {
+          <article class="relative pl-6">
+            <div class="absolute left-0 top-1 h-full border-l border-[#E6B8A2]/70"></div>
+            <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-[#E6B8A2] ring-2 ring-white/70"></span>
+
+            <h3 class="text-sm uppercase tracking-wide text-[#7A5B4A] font-semibold">
+              {{ exp.MOMENT }}
+            </h3>
+            <h4 class="text-[1.05rem] font-medium mt-1">
+              {{ exp.POSITION }} – <span class="font-semibold">{{ exp.COMPANY }}</span>
+            </h4>
+            <p class="text-sm italic text-[#7A5B4A] mt-0.5">{{ exp.DATES }}</p>
+            <p class="text-[1rem] leading-7 text-[#4b3b2b] mt-2">
+              {{ exp.DESCRIPTION }}
+            </p>
+          </article>
+        }
       </div>
-    }
-  </div>
+    </div>
 
-  
-  <div class="bg-[#d6b37f93] border-[3px] border-[#e7cba1] shadow-xl max-w-[90vw] md:max-w-xl flex-1 flex flex-col justify-between rounded-2xl px-6 sm:px-8 py-10 text-[#4b3b2b] text-center">
-    <h2 class="text-[2.7rem] mb-6 text-[#6b3e2e] font-[Cormorant_Garamond] italic font-semibold tracking-wide">
-      {{ 'EXPERIENCE.TITLE' | translate }}
-    </h2>
-    <p class="text-[1.15rem] italic text-[#7a5a3a] mb-12 font-[Lora]">
-      {{ 'EXPERIENCE.BIO' | translate }}
-    </p>
-
-    @for (exp of experiences(); track exp.MOMENT) {
-      <div class="mb-12 font-[Lora]">
-        <h3 class="text-[1.3rem] uppercase mb-1 tracking-wide text-[#8b5c2c] relative inline-block after:content-['❧'] after:block after:text-[1.3rem] after:text-[#c49a6c] after:mt-1">
-          {{ exp.MOMENT }}
-        </h3>
-        <h4 class="text-[1.15rem] font-medium mb-1">{{ exp.POSITION }} – {{ exp.COMPANY }}</h4>
-        <p class="text-[0.95rem] italic text-[#7a5a3a] mb-2">{{ exp.DATES }}</p>
-        <p class="text-[1.05rem] leading-[1.7] text-[#3f3024] max-w-[90%] mx-auto">{{ exp.DESCRIPTION }}</p>
-      </div>
-    }
   </div>
 </section>

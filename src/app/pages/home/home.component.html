@@ -1,13 +1,28 @@
 <section class="home-container">
-  <h1 class="intro typewriter-wrapper">
-    <span class="typewriter-text">
-      {{ 'HOME.INTRO' | translate }}
-      <span class="name">
-        {{ 'HOME.NAME' | translate }}
-      </span>
-    </span>
-    <span class="typewriter-cursor">|</span>
-  </h1>
+
+  @if (!isMobile()) {
+ <h1 class="intro typewriter-wrapper">
+  <span class="typewriter-text">
+    {{ 'HOME.INTRO' | translate }}
+    <span class="highlighted-name">{{ 'HOME.NAME' | translate }}</span>
+  </span>
+  <span class="typewriter-cursor">|</span>
+</h1>
+
+  }
+
+  @if (isMobile()) {
+    <div class="mobile-intro">
+      <p class="mobile-intro-line">{{ 'HOME.INTRO' | translate }}</p>
+      <p class="mobile-name">{{ 'HOME.NAME' | translate }}</p>
+      <div class="typewriter-wrapper ">
+        <span class="typewriter-text">
+          {{ 'HOME.ROLE' | translate }}
+        </span>
+        <span class="typewriter-cursor">|</span>
+      </div>
+    </div>
+  }
 
   <p class="welcome-text">{{ 'HOME.WELCOME' | translate }}</p>
 </section>
